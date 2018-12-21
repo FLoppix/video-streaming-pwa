@@ -1,0 +1,77 @@
+{
+  "name": "electron-streaming-pwa",
+  "productName": "awt-pwa",
+  "version": "1.0.0",
+  "author": "Felix, David, Nassym",
+  "description": "PWA for streaming.",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "@material-ui/core": "^1.1.0",
+    "@material-ui/icons": "^1.0.0-beta.43",
+    "asar": "^0.14.3",
+    "bootstrap": "^4.1.1",
+    "dash-mpd-parser": "^0.1.1",
+    "dexie": "^2.0.3",
+    "electron-debug": "^2.0.0",
+    "electron-is-dev": "^0.3.0",
+    "history": "^4.7.2",
+    "is-electron": "^2.1.0",
+    "material-ui": "^1.0.0-beta.46",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "node-notifier": "^5.2.1",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-circular-progressbar": "^0.8.0",
+    "react-detect-offline": "^2.1.1",
+    "react-dom": "^16.3.2",
+    "react-notifications": "^1.4.3",
+    "react-scripts": "1.1.4",
+    "shaka-player": "^2.3.7",
+    "styled-components": "^3.2.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "electron-dev":
+      "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "preelectron-pack": "yarn build",
+    "package": "npm run build && build --publish never",
+    "electron-pack": "build --mac",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "concurrently": "^3.5.1",
+    "electron": "1.8.6",
+    "electron-builder": "^20.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "jquery": "^3.3.1",
+    "prettier": "^1.12.1",
+    "prettier-eslint": "^8.8.1",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^6.0.1",
+    "wait-on": "^2.1.0"
+  },
+  "build": {
+    "asar": false,
+    "appId": "com.example.electron-cra",
+    "extends": null,
+    "files": ["build/**/*", "node_modules/**/*"],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}

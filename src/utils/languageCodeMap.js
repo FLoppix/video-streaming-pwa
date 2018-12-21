@@ -1,0 +1,15 @@
+export const languageCodeMap = {
+  es: 'Spain',
+  de: 'German',
+  fr: 'France',
+  it: 'Italian',
+  pt: 'Portuguese',
+  'pt-BR': 'Portuguese (Brazil)',
+  'pt-br': 'Portuguese (Brazil)',
+  en: 'English',
+  pl: 'Polish',
+  ru: 'Russian',
+  vi: 'Vietnamese',
+  el: 'Greek',
+  nl: 'Dutch',
+};

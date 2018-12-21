@@ -1,0 +1,12 @@
+.color-red {
+    color: red !important;
+}
+
+.color-green {
+    color: green !important;
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+}
